@@ -10,10 +10,14 @@
 
 #include "sm_uart_define.h"
 
-sm_uart_t uart_debug = {.m_instance = UART0, .m_fifo_size = 0, .m_baudrate = 9600};
+typedef void sm_uart_t;
 
-sm_uart_t uart_rs485_1 = {.m_instance = UART1, .m_fifo_size = 256, .m_baudrate = 9600};
+sm_uart_t* sm_uart_create(void* _instance, uint16_t _baudrate, uint16_t _fifo_size);
 
-sm_uart_t uart_rs485_2 = {.m_instance = UART2, .m_fifo_size = 256, .m_baudrate = 9600};
+int32_t sm_uart_enable_interrupt(sm_uart_t* _this, uint8_t _priority);
+
+int32_t sm_uart_disable_interrupt(sm_uart_t* _this, uint8_t _priority);
+
+int32_t sm_uart_destroy(sm_uart_t* _this);
 
 #endif /* SM_BOARD_SM_UART_SM_UART_H_ */

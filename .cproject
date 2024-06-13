@@ -58,6 +58,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/BSS_SLAVE_MAIN/User/sm_board}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/BSS_SLAVE_MAIN/User/sm_board/sm_gpio}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/BSS_SLAVE_MAIN/User/sm_board/sm_uart}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/BSS_SLAVE_MAIN/User/sm_board/sm_board_define}&quot;"/>
 								</option>
 								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input.159684554" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input"/>
 							</tool>
